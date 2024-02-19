@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+  
+  <head> 
+    <title> IOSPLOIT </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+  <button onclick="toggleMode()" style="display:inline-block; margin-left: 60px;" class="mode">
+    <img src="https://cdn-icons-png.flaticon.com/128/4623/4623236.png" style="float:left; width: 10px;">
+  </button>
+  
+  <a href="#script">Script</a>
+  <a href="#features">Features</a>
+  <a href="#games">Games</a>
+  <a href="#developers">Developers</a>
+</div>
+  
+<button class="btn" onclick="openNav()">=</button>
+
+<div class="main">
+   <h1 style="color: white;"> IOSPLOIT</h1> 
+</div>
+  
+  <br><br><br><br>
+  
+  <center>
+    <div id="features">
+    <div class="UI1">
+     <h3> Features </h3>
+      <p style="font-size: 18px;"> • KeyLess </p>
+      <p style="font-size: 18px;"> • Free, no need to pay.</p>
+      <p style="font-size: 18px;"> • Staff Support/Help when you need it.</p>
+      </div>
+    </div>
+  </center>
+  
+  <br><br><br><br>
+  
+  <center>
+    <div id="games">
+    <div class="UI1">
+     <h3 style="color: #FF3838;"> Games </h3>
+      <p style="font-size: 18px;"> • Soon.. </p>
+      <p style="font-size: 18px;"> • Soon..</p>
+      <p style="font-size: 18px;"> • Soon..<p>
+    </div>
+    </div>
+  </center>
+  
+  <br><br><br><br>
+  
+ 
+  <center>
+    <div id="developers">
+    <div class="UI1">
+     <h3 style="color: #9238FF;"> Developers </h3>
+      <p style="font-size: 18px;"> • Chxrgxr </p>
+      <p style="font-size: 18px;"> • luna_salt</p>
+    </div>
+    </div>
+  </center>
+  
+  <br><br><br><br>
+  
+  <center>
+  <div id="script">
+    <div class="UI1"> 
+      <h3>Script</h3>
+      <p> Copy our Universal Script and Execute! </p>
+      <input type="text" readonly value="loadstring(game:HttpGet('https://raw.githubusercontent.com/Chxrgxr/scripts/main/lunight.lua'))()" style="color: white; background-color: black; border-radius: 5px">
+      <button onclick="copyText1()" style="background-color: black; color: white; border-radius: 5px;"> Copy Script </button>
+    </div>
+  </div>
+  </center>
+  
+  
+  <br><br><br><br>
+  
+  <script>
+    function copyText1() {
+  var copyText = "loadstring(game:HttpGet(\'https://raw.githubusercontent.com/Chxrgxr/scripts/main/lunight.lua'))()";
+  navigator.clipboard.writeText(copyText);
+  alert("Copied!")
+}
+   function toggleMode() {
+  const body = document.body;
+  body.classList.toggle('dark-mode');
+}
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,99 @@
+body {
+  background: rgb(109,122,221);
+  background: linear-gradient(210deg, rgba(109,122,221,1) 12%, rgba(221,109,109,1) 43%, rgba(221,15,15,1) 96%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'SF Pro Rounded', sans-serif;
+  margin: 0; /* Add this line to remove default body margin */
+}
+
+.sidenav {
+  height: 100vh; /* Set height to 100% viewport height */
+  width: 180px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+  background: rgba(0,0,0, 0.7);
+  border-radius: 2px;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #FDD6CD;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #ff0000;
+}
+
+
+.main {
+  margin: center; /* Adjust margin to account for sidenav width */
+  padding: 0px 10px;
+}
+
+.UI1 {
+  padding: 20px;
+  background: rgba(0,0,0, 0.6);
+  color: white;
+  max-width: 80%;
+  margin: auto;
+  border-radius: 5px;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#down {
+  margin-top: 100%;
+  padding-bottom: 25%;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.btn {
+  background: rgba(0,0,0, 0.4);
+  color: white;
+  border-radius: 5px;
+  
+}
+
+
+
+.dark-mode {
+background: rgb(12,2,88);
+background: linear-gradient(180deg, rgba(12,2,88,0.981651376146789) 1%, rgba(48,2,2,1) 98%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #ffffff; /* Dark mode text color */
+}
+
+
+.dark-mode .UI1 {
+background: rgb(6,1,47);
+background: linear-gradient(0deg, rgba(6,1,47,0.981651376146789) 1%, rgba(23,4,2,1) 98%);
+  color: white;
+}
+
+.dark-mode .sidenav a {
+  color: white;
+}
